@@ -3,3 +3,13 @@ excludes:
   - pattern: "test.*"
     reason: "TEST_DEPENDENCY_OF"
     comment: "Packages for testing only."
+  paths:
+  - pattern: "gradle/**"
+    reason: "BUILD_TOOL_OF"
+    comment: "This directory contains build tools which are not distributed."
+  - pattern: "gradlew"
+    reason: "BUILD_TOOL_OF"
+    comment: "This is the build tool."
+  - pattern: "gradlew.bat"
+    reason: "BUILD_TOOL_OF"
+    comment: "This is the build tool."
