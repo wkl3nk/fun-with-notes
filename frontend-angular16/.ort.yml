@@ -3,3 +3,13 @@ excludes:
   - pattern: "devDependencies"
     reason: "DEV_DEPENDENCY_OF"
     comment: "Packages for development only."
+  paths:
+  - pattern: "gradle/**"
+    reason: "BUILD_TOOL_OF"
+    comment: "This directory contains build tool gradle."
+  - pattern: "backend-spring-boot/**"
+    reason: "OTHER"
+    comment: "This directory contains a source code module that is not in scope of this scan."
+  - pattern: "python-tools/**"
+    reason: "OTHER"
+    comment: "This directory contains a source code module that is not in scope of this scan."
