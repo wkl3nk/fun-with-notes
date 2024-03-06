@@ -1,16 +1,16 @@
-# This is a sample Python script.
+import numpy as np
+import pandas as pd
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    # Creating a NumPy array
+    data = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    # Converting NumPy array to a Pandas DataFrame
+    df = pd.DataFrame(data, columns=['A', 'B', 'C'])
+
+    # Performing some operations on the DataFrame
+    df['D'] = df['A'] + df['B']
+    df['E'] = df['C'] * 2
+
+    # Displaying the DataFrame
+    print(df)
